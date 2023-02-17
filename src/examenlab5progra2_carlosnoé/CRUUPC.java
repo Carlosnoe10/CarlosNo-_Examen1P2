@@ -31,7 +31,20 @@ public class CRUUPC extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
-        jRadioButton2 = new javax.swing.JRadioButton();
+        jTextField1 = new javax.swing.JTextField();
+        label1 = new java.awt.Label();
+        label2 = new java.awt.Label();
+        Marca = new javax.swing.JTextField();
+        label3 = new java.awt.Label();
+        DefPantalla = new javax.swing.JTextField();
+        label4 = new java.awt.Label();
+        DireccionIP = new javax.swing.JTextField();
+        label5 = new java.awt.Label();
+        MascaraDeRed = new javax.swing.JTextField();
+        label6 = new java.awt.Label();
+        HostName = new javax.swing.JTextField();
+        RGB = new javax.swing.JCheckBox();
+        Crear = new java.awt.Button();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -48,24 +61,81 @@ public class CRUUPC extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(115, 115, 115)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(41, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(49, 49, 49))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
+                .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
 
-        Base.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 440, -1));
+        Base.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 0, 450, 80));
 
-        jRadioButton2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jRadioButton2.setText("Laptop");
-        Base.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 490, -1, -1));
+        jTextField1.setText("jTextField1");
+        Base.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 1090, 20));
+
+        label1.setBackground(new java.awt.Color(153, 153, 153));
+        label1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        label1.setForeground(new java.awt.Color(255, 255, 255));
+        label1.setText("Ingresar Marca: ");
+        Base.add(label1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 110, -1));
+
+        label2.setBackground(new java.awt.Color(153, 153, 153));
+        label2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        label2.setForeground(new java.awt.Color(255, 255, 255));
+        label2.setText("Ingresar Marca: ");
+        Base.add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 110, -1));
+
+        Marca.setText("jTextField1");
+        Base.add(Marca, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 1090, 20));
+
+        label3.setBackground(new java.awt.Color(153, 153, 153));
+        label3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        label3.setForeground(new java.awt.Color(255, 255, 255));
+        label3.setText("Ingresar definicion de Pantalla: ");
+        Base.add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 210, 20));
+
+        DefPantalla.setText("jTextField1");
+        Base.add(DefPantalla, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 1090, -1));
+
+        label4.setBackground(new java.awt.Color(153, 153, 153));
+        label4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        label4.setForeground(new java.awt.Color(255, 255, 255));
+        label4.setText("Ingresar DIrreccion IP:");
+        Base.add(label4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 150, -1));
+
+        DireccionIP.setText("jTextField1");
+        Base.add(DireccionIP, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 1090, 20));
+
+        label5.setBackground(new java.awt.Color(153, 153, 153));
+        label5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        label5.setForeground(new java.awt.Color(255, 255, 255));
+        label5.setText("Ingresar Mascara de red: ");
+        Base.add(label5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 170, -1));
+
+        MascaraDeRed.setText("jTextField1");
+        Base.add(MascaraDeRed, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 1090, 20));
+
+        label6.setBackground(new java.awt.Color(153, 153, 153));
+        label6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        label6.setForeground(new java.awt.Color(255, 255, 255));
+        label6.setText("Ingresar HostName:");
+        Base.add(label6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, 130, -1));
+
+        HostName.setText("jTextField1");
+        Base.add(HostName, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, 1090, 20));
+
+        RGB.setText("Teclado RGB");
+        Base.add(RGB, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, -1, -1));
+
+        Crear.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        Crear.setLabel("Crear Laptop");
+        Base.add(Crear, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 470, 1090, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -118,10 +188,23 @@ public class CRUUPC extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Base;
+    private java.awt.Button Crear;
+    private javax.swing.JTextField DefPantalla;
+    private javax.swing.JTextField DireccionIP;
+    private javax.swing.JTextField HostName;
+    private javax.swing.JTextField Marca;
+    private javax.swing.JTextField MascaraDeRed;
+    private javax.swing.JCheckBox RGB;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextPane jTextPane1;
+    private java.awt.Label label1;
+    private java.awt.Label label2;
+    private java.awt.Label label3;
+    private java.awt.Label label4;
+    private java.awt.Label label5;
+    private java.awt.Label label6;
     // End of variables declaration//GEN-END:variables
 }

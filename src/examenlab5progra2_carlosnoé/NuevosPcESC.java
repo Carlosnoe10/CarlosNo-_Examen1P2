@@ -26,10 +26,133 @@ public class NuevosPcESC extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Base = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextPane2 = new javax.swing.JTextPane();
+        jTextField1 = new javax.swing.JTextField();
+        label1 = new java.awt.Label();
+        label2 = new java.awt.Label();
+        Marca = new javax.swing.JTextField();
+        label3 = new java.awt.Label();
+        DefPantalla = new javax.swing.JTextField();
+        label4 = new java.awt.Label();
+        DireccionIP = new javax.swing.JTextField();
+        label5 = new java.awt.Label();
+        MascaraDeRed = new javax.swing.JTextField();
+        label6 = new java.awt.Label();
+        HostName = new javax.swing.JTextField();
+        RGB = new javax.swing.JCheckBox();
+        Crear = new java.awt.Button();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
+        Base1 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
+        jTextField2 = new javax.swing.JTextField();
+        label7 = new java.awt.Label();
+        Marca1 = new javax.swing.JTextField();
+        label9 = new java.awt.Label();
+        DefPantalla1 = new javax.swing.JTextField();
+        label10 = new java.awt.Label();
+        DireccionIP1 = new javax.swing.JTextField();
+        label11 = new java.awt.Label();
+        MascaraDeRed1 = new javax.swing.JTextField();
+        label12 = new java.awt.Label();
+        HostName1 = new javax.swing.JTextField();
+        RGB1 = new javax.swing.JCheckBox();
+        Crear1 = new java.awt.Button();
+        RGB2 = new javax.swing.JCheckBox();
+
+        Base.setBackground(new java.awt.Color(102, 102, 102));
+        Base.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel3.setBackground(new java.awt.Color(51, 51, 51));
+
+        jTextPane2.setFont(new java.awt.Font("Arial", 0, 36)); // NOI18N
+        jTextPane2.setText("Nuevos PCs Laptop");
+        jScrollPane2.setViewportView(jTextPane2);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(63, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(49, 49, 49))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(37, Short.MAX_VALUE))
+        );
+
+        Base.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 0, 440, -1));
+
+        jTextField1.setText("jTextField1");
+        Base.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 1090, 20));
+
+        label1.setBackground(new java.awt.Color(153, 153, 153));
+        label1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        label1.setForeground(new java.awt.Color(255, 255, 255));
+        label1.setText("Ingresar Marca: ");
+        Base.add(label1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 110, -1));
+
+        label2.setBackground(new java.awt.Color(153, 153, 153));
+        label2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        label2.setForeground(new java.awt.Color(255, 255, 255));
+        label2.setText("Ingresar Marca: ");
+        Base.add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 110, -1));
+
+        Marca.setText("jTextField1");
+        Base.add(Marca, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 1090, 20));
+
+        label3.setBackground(new java.awt.Color(153, 153, 153));
+        label3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        label3.setForeground(new java.awt.Color(255, 255, 255));
+        label3.setText("Ingresar definicion de Pantalla: ");
+        Base.add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 210, 20));
+
+        DefPantalla.setText("jTextField1");
+        Base.add(DefPantalla, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 1090, -1));
+
+        label4.setBackground(new java.awt.Color(153, 153, 153));
+        label4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        label4.setForeground(new java.awt.Color(255, 255, 255));
+        label4.setText("Ingresar DIrreccion IP:");
+        Base.add(label4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 150, -1));
+
+        DireccionIP.setText("jTextField1");
+        Base.add(DireccionIP, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 1090, 20));
+
+        label5.setBackground(new java.awt.Color(153, 153, 153));
+        label5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        label5.setForeground(new java.awt.Color(255, 255, 255));
+        label5.setText("Ingresar Mascara de red: ");
+        Base.add(label5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 170, -1));
+
+        MascaraDeRed.setText("jTextField1");
+        Base.add(MascaraDeRed, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 1090, 20));
+
+        label6.setBackground(new java.awt.Color(153, 153, 153));
+        label6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        label6.setForeground(new java.awt.Color(255, 255, 255));
+        label6.setText("Ingresar HostName:");
+        Base.add(label6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, 130, -1));
+
+        HostName.setText("jTextField1");
+        Base.add(HostName, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, 1090, 20));
+
+        RGB.setText("Teclado RGB");
+        Base.add(RGB, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, -1, -1));
+
+        Crear.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        Crear.setLabel("Crear Laptop");
+        Base.add(Crear, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 470, 1090, 40));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -38,44 +161,126 @@ public class NuevosPcESC extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(51, 51, 51));
 
-        jTextPane1.setFont(new java.awt.Font("Arial", 0, 36)); // NOI18N
-        jTextPane1.setText("Nuevos PCs Escritorio");
-        jScrollPane1.setViewportView(jTextPane1);
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(115, 115, 115)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(117, Short.MAX_VALUE))
+            .addGap(0, 2254, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(27, Short.MAX_VALUE))
+            .addGap(0, 645, Short.MAX_VALUE)
         );
+
+        Base1.setBackground(new java.awt.Color(102, 102, 102));
+        Base1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel4.setBackground(new java.awt.Color(51, 51, 51));
+
+        jTextPane1.setFont(new java.awt.Font("Arial", 0, 36)); // NOI18N
+        jTextPane1.setText("Nuevos PCs Escritorio");
+        jScrollPane1.setViewportView(jTextPane1);
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(38, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(28, Short.MAX_VALUE))
+        );
+
+        Base1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 0, 440, -1));
+
+        jTextField2.setText("jTextField1");
+        Base1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 1090, 20));
+
+        label7.setBackground(new java.awt.Color(153, 153, 153));
+        label7.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        label7.setForeground(new java.awt.Color(255, 255, 255));
+        label7.setText("Ingresar Capacidad Ram: ");
+        Base1.add(label7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 170, -1));
+        label7.getAccessibleContext().setAccessibleName("Ingresar Capacidad Ram:");
+
+        Marca1.setText("jTextField1");
+        Base1.add(Marca1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 1090, 20));
+
+        label9.setBackground(new java.awt.Color(153, 153, 153));
+        label9.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        label9.setForeground(new java.awt.Color(255, 255, 255));
+        label9.setText("Ingresar capacidad alma: ");
+        Base1.add(label9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 170, 20));
+
+        DefPantalla1.setText("jTextField1");
+        Base1.add(DefPantalla1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 1090, -1));
+
+        label10.setBackground(new java.awt.Color(153, 153, 153));
+        label10.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        label10.setForeground(new java.awt.Color(255, 255, 255));
+        label10.setText("Ingresar DIrreccion IP:");
+        Base1.add(label10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 150, -1));
+
+        DireccionIP1.setText("jTextField1");
+        Base1.add(DireccionIP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 1090, 20));
+
+        label11.setBackground(new java.awt.Color(153, 153, 153));
+        label11.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        label11.setForeground(new java.awt.Color(255, 255, 255));
+        label11.setText("Ingresar Mascara de red: ");
+        Base1.add(label11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 170, -1));
+
+        MascaraDeRed1.setText("jTextField1");
+        Base1.add(MascaraDeRed1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 1090, 20));
+
+        label12.setBackground(new java.awt.Color(153, 153, 153));
+        label12.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        label12.setForeground(new java.awt.Color(255, 255, 255));
+        label12.setText("Ingresar HostName:");
+        Base1.add(label12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, 130, -1));
+
+        HostName1.setText("jTextField1");
+        Base1.add(HostName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, 1090, 20));
+
+        RGB1.setText("Marque si desea HDD si no SDD");
+        RGB1.setActionCommand("Tarjeta Grafica");
+        Base1.add(RGB1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 470, -1, -1));
+
+        Crear1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        Crear1.setLabel("Crear  PC Escritorio");
+        Base1.add(Crear1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 520, 1090, 40));
+        Crear1.getAccessibleContext().setAccessibleName("Crear PC Escritorio");
+
+        RGB2.setText("Teclado RGB");
+        RGB2.setActionCommand("Tarjeta Grafica");
+        Base1.add(RGB2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(6, 6, 6)
+                .addComponent(Base1, javax.swing.GroupLayout.PREFERRED_SIZE, 1185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(284, 284, 284)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 313, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(99, 388, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(Base1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -117,9 +322,43 @@ public class NuevosPcESC extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel Base;
+    private javax.swing.JPanel Base1;
+    private java.awt.Button Crear;
+    private java.awt.Button Crear1;
+    private javax.swing.JTextField DefPantalla;
+    private javax.swing.JTextField DefPantalla1;
+    private javax.swing.JTextField DireccionIP;
+    private javax.swing.JTextField DireccionIP1;
+    private javax.swing.JTextField HostName;
+    private javax.swing.JTextField HostName1;
+    private javax.swing.JTextField Marca;
+    private javax.swing.JTextField Marca1;
+    private javax.swing.JTextField MascaraDeRed;
+    private javax.swing.JTextField MascaraDeRed1;
+    private javax.swing.JCheckBox RGB;
+    private javax.swing.JCheckBox RGB1;
+    private javax.swing.JCheckBox RGB2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JTextPane jTextPane2;
+    private java.awt.Label label1;
+    private java.awt.Label label10;
+    private java.awt.Label label11;
+    private java.awt.Label label12;
+    private java.awt.Label label2;
+    private java.awt.Label label3;
+    private java.awt.Label label4;
+    private java.awt.Label label5;
+    private java.awt.Label label6;
+    private java.awt.Label label7;
+    private java.awt.Label label9;
     // End of variables declaration//GEN-END:variables
 }
