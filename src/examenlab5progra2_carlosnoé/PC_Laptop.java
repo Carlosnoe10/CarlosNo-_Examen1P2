@@ -63,7 +63,10 @@ public class PC_Laptop extends PC{
 
     @Override
     public String toString() {
-        return "PC_Laptop{" + "Marca=" + Marca + ", DefinicionDPantalla=" + DefinicionDPantalla + ", RGBteclado=" + RGBteclado + '}';
+        return super.toString()+"PC Laptop \n"
+                + "Marca " + Marca + "\n"
+                + "DefinicionDPantalla" + DefinicionDPantalla + "\n"
+                + "RGBteclado" + RGBteclado;
     }
     
     

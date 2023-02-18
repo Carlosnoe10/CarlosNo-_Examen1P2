@@ -5,6 +5,7 @@
 package examenlab5progra2_carlosnoé;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  *
@@ -1115,6 +1116,11 @@ public class main extends javax.swing.JFrame {
         Titulo1.setText("CRUU PC Escritorio");
 
         Boton3.setBackground(new java.awt.Color(51, 51, 51));
+        Boton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Boton3MouseClicked(evt);
+            }
+        });
         Boton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Boton3ActionPerformed(evt);
@@ -1250,7 +1256,43 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_BotonListarPcs7ActionPerformed
 
     private void Boton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton3ActionPerformed
-        // TODO add your handling code here:
+        jPanel2.setVisible(false);
+        Scanner k1ng = new Scanner(System.in);
+        Scanner Estado = new Scanner(System.in);
+        System.out.println("Ingrese el \n"
+                + "1. Ping \n"
+                + "2. show \n"
+                + "3. exit ");
+        int menu = k1ng.nextInt();
+        for (int x = 0; x < 1; x++) {
+            while (menu != 4) {
+                if ((menu > 0) && (menu < 4)) { // 4 es igual al numero limite que deseo agregar
+                    x++;
+                    switch (menu) {
+                        case 1:
+                            break;
+                        case 2:
+                            for (int i = 0; i < PCs.size(); i++) {
+                                PCs.get(i).toString();
+                            }
+                            break;
+                        case 3:
+                            jPanel2.setVisible(true);
+                            break;
+                    }
+                    System.out.println("--Bienvenido al menu--");
+                    System.out.println("Ingrese el \n"
+                            + "1. Ping \n"
+                            + "2. show \n"
+                            + "3. exit ");
+                    menu = k1ng.nextInt();
+
+                } else {
+                    x--;
+                    System.out.println("Invalido");
+                }
+            }
+        }
     }//GEN-LAST:event_Boton3ActionPerformed
 
     private void Boton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton2ActionPerformed
@@ -1388,6 +1430,10 @@ public class main extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Aceptar1ActionPerformed
 
+    private void Boton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Boton3MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -1421,6 +1467,16 @@ public class main extends javax.swing.JFrame {
                 new main().setVisible(true);
             }
         });
+    }
+
+    public static ArrayList Ping(String ip1) {
+        ArrayList<Integer>Onichan= new ArrayList();
+        String[] result = "Esto es una prueba".split(".");
+        for (int x = 0; x < result.length; x++) {
+            int num = Integer.parseInt(result[x]);
+            Onichan.add(num);
+        }
+        return Onichan;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
