@@ -1,12 +1,12 @@
 package examenlab5progra2_carlosnoé;
 
 public class PC_Escritorio extends PC {
-    public int capacidadRAM;
-    public int CapacidadALMA;
-    public boolean TipoAlma;
+    public String capacidadRAM;
+    public String CapacidadALMA;
+    public String TipoAlma;
     public boolean TarjetaGrafica;
 
-    public PC_Escritorio(int capacidadRAM, int CapacidadALMA, boolean TipoAlma, boolean TarjetaGrafica, String direccionIp, String MascaradeRed, String hostName) {
+    public PC_Escritorio(String capacidadRAM, String CapacidadALMA, String TipoAlma, boolean TarjetaGrafica, String direccionIp, String MascaradeRed, String hostName) {
         super(direccionIp, MascaradeRed, hostName);
         this.capacidadRAM = capacidadRAM;
         this.CapacidadALMA = CapacidadALMA;
@@ -14,27 +14,27 @@ public class PC_Escritorio extends PC {
         this.TarjetaGrafica = TarjetaGrafica;
     }
 
-    public int getCapacidadRAM() {
+    public String getCapacidadRAM() {
         return capacidadRAM;
     }
 
-    public void setCapacidadRAM(int capacidadRAM) {
+    public void setCapacidadRAM(String capacidadRAM) {
         this.capacidadRAM = capacidadRAM;
     }
 
-    public int getCapacidadALMA() {
+    public String getCapacidadALMA() {
         return CapacidadALMA;
     }
 
-    public void setCapacidadALMA(int CapacidadALMA) {
+    public void setCapacidadALMA(String CapacidadALMA) {
         this.CapacidadALMA = CapacidadALMA;
     }
 
-    public boolean isTipoAlma() {
+    public String isTipoAlma() {
         return TipoAlma;
     }
 
-    public void setTipoAlma(boolean TipoAlma) {
+    public void setTipoAlma(String TipoAlma) {
         this.TipoAlma = TipoAlma;
     }
 

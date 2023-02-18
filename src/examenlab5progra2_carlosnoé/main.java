@@ -116,9 +116,27 @@ public class main extends javax.swing.JFrame {
         MascaraDeRed1 = new javax.swing.JTextField();
         label12 = new java.awt.Label();
         HostName1 = new javax.swing.JTextField();
-        RGB1 = new javax.swing.JCheckBox();
+        HDDoSDD = new javax.swing.JCheckBox();
         Crear1 = new java.awt.Button();
         RGB2 = new javax.swing.JCheckBox();
+        jFrame5 = new javax.swing.JFrame();
+        jPanel21 = new javax.swing.JPanel();
+        Listado = new java.awt.List();
+        jLabel46 = new javax.swing.JLabel();
+        jFrame6 = new javax.swing.JFrame();
+        jPanel22 = new javax.swing.JPanel();
+        Listado1 = new java.awt.List();
+        jLabel47 = new javax.swing.JLabel();
+        jFrame7 = new javax.swing.JFrame();
+        jPanel1 = new javax.swing.JPanel();
+        jTextField1 = new javax.swing.JTextField();
+        Campo = new java.awt.TextField();
+        Aceptar = new java.awt.Button();
+        jFrame8 = new javax.swing.JFrame();
+        jPanel3 = new javax.swing.JPanel();
+        jTextField2 = new javax.swing.JTextField();
+        Campo1 = new java.awt.TextField();
+        Aceptar1 = new java.awt.Button();
         Base = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         Panel1 = new javax.swing.JPanel();
@@ -677,9 +695,7 @@ public class main extends javax.swing.JFrame {
         );
         jFrame1Layout.setVerticalGroup(
             jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jFrame1Layout.createSequentialGroup()
-                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 128, Short.MAX_VALUE))
+            .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         Base13.setBackground(new java.awt.Color(102, 102, 102));
@@ -870,9 +886,9 @@ public class main extends javax.swing.JFrame {
         HostName1.setText("Ingrese aquii...");
         Base12.add(HostName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, 1090, 20));
 
-        RGB1.setText("Marque si desea HDD si no SDD");
-        RGB1.setActionCommand("Tarjeta Grafica");
-        Base12.add(RGB1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 470, -1, -1));
+        HDDoSDD.setText("Marque si desea HDD si no SDD");
+        HDDoSDD.setActionCommand("Tarjeta Grafica");
+        Base12.add(HDDoSDD, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 470, -1, -1));
 
         Crear1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         Crear1.setLabel("Crear  PC Escritorio");
@@ -900,6 +916,131 @@ public class main extends javax.swing.JFrame {
             .addGap(0, 584, Short.MAX_VALUE)
             .addGroup(jFrame4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(Base12, javax.swing.GroupLayout.DEFAULT_SIZE, 584, Short.MAX_VALUE))
+        );
+
+        jPanel21.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Listado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ListadoActionPerformed(evt);
+            }
+        });
+        jPanel21.add(Listado, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 1120, 620));
+
+        jLabel46.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel46.setFont(new java.awt.Font("Arial", 0, 36)); // NOI18N
+        jLabel46.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel46.setText("Listado Pc Escritorio");
+        jPanel21.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, 360, 70));
+
+        javax.swing.GroupLayout jFrame5Layout = new javax.swing.GroupLayout(jFrame5.getContentPane());
+        jFrame5.getContentPane().setLayout(jFrame5Layout);
+        jFrame5Layout.setHorizontalGroup(
+            jFrame5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jFrame5Layout.setVerticalGroup(
+            jFrame5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel22.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel22.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Listado1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Listado1ActionPerformed(evt);
+            }
+        });
+        jPanel22.add(Listado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 1120, 620));
+
+        jLabel47.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel47.setFont(new java.awt.Font("Arial", 0, 36)); // NOI18N
+        jLabel47.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel47.setText("Listado Pc Laptop");
+        jPanel22.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, 360, 70));
+
+        javax.swing.GroupLayout jFrame6Layout = new javax.swing.GroupLayout(jFrame6.getContentPane());
+        jFrame6.getContentPane().setLayout(jFrame6Layout);
+        jFrame6Layout.setHorizontalGroup(
+            jFrame6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jFrame6Layout.setVerticalGroup(
+            jFrame6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextField1.setText("Ingrese el Numero que desea Eliminar");
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 680, 20));
+
+        Campo.setText("textField1");
+        Campo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CampoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Campo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, 20));
+
+        Aceptar.setLabel("button1");
+        Aceptar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                AceptarMouseClicked(evt);
+            }
+        });
+        jPanel1.add(Aceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 220, 460, 40));
+
+        javax.swing.GroupLayout jFrame7Layout = new javax.swing.GroupLayout(jFrame7.getContentPane());
+        jFrame7.getContentPane().setLayout(jFrame7Layout);
+        jFrame7Layout.setHorizontalGroup(
+            jFrame7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jFrame7Layout.setVerticalGroup(
+            jFrame7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel3.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextField2.setText("Ingrese el Numero que desea Eliminar");
+        jPanel3.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 680, 20));
+
+        Campo1.setText("textField1");
+        Campo1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Campo1ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(Campo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, 20));
+
+        Aceptar1.setLabel("button1");
+        Aceptar1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Aceptar1MouseClicked(evt);
+            }
+        });
+        Aceptar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Aceptar1ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(Aceptar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, 460, 40));
+
+        javax.swing.GroupLayout jFrame8Layout = new javax.swing.GroupLayout(jFrame8.getContentPane());
+        jFrame8.getContentPane().setLayout(jFrame8Layout);
+        jFrame8Layout.setHorizontalGroup(
+            jFrame8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jFrame8Layout.setVerticalGroup(
+            jFrame8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -1162,36 +1303,41 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_CapacidadRamActionPerformed
 
     private void Crear1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Crear1ActionPerformed
-    String CapacidadRam1= CapacidadRam.getText();
-    String CapacidadAlma= DefPantalla1.getText();
-    String DirreccionIP= DireccionIP1.getText();
-    String Mascarra= MascaraDeRed1.getText();
-    String Name= HostName1.getText();
-    boolean tac1;
-    boolean tac2;
+        String CapacidadRam1 = CapacidadRam.getText();
+        String CapacidadAlma = DefPantalla1.getText();
+        String DirreccionIP = DireccionIP1.getText();
+        String Mascarra = MascaraDeRed1.getText();
+        String Name = HostName1.getText();
+        boolean tac1;
+        String tac2;
         if (RGB2.isSelected()) {
-            tac1=true;
-        }else{
-            tac1= false;
+            tac1 = true;
+        } else {
+            tac1 = false;
         }
-    
-
+        if (HDDoSDD.isSelected()) {
+            tac2 = "HDD";
+        } else {
+            tac2 = "SSD";
+        }
+        PC_Escritorio pc2 = new PC_Escritorio(CapacidadRam1, CapacidadAlma, tac2, tac1, DirreccionIP, Mascarra, Name);
+        PCs.add(pc2);
     }//GEN-LAST:event_Crear1ActionPerformed
 
     private void CrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CrearActionPerformed
         String Marca0 = Marca1.getText();
-        String DefinicioPant= DefPantalla.getText();
-        String direccionip= DireccionIP.getText();
-        String Mascara= MascaraDeRed.getName();
-        String SourceName= HostName.getName();
+        String DefinicioPant = DefPantalla.getText();
+        String direccionip = DireccionIP.getText();
+        String Mascara = MascaraDeRed.getName();
+        String SourceName = HostName.getName();
         boolean Pass;
         RGB.isSelected();
-        if(RGB.isSelected()) {
-            Pass=true;
-        }else{
-            Pass=false;
+        if (RGB.isSelected()) {
+            Pass = true;
+        } else {
+            Pass = false;
         }
-        PC_Laptop pc1= new PC_Laptop(Marca0, DefinicioPant,Pass, direccionip, Mascara, SourceName);
+        PC_Laptop pc1 = new PC_Laptop(Marca0, DefinicioPant, Pass, direccionip, Mascara, SourceName);
         PCs.add(pc1);
 
     }//GEN-LAST:event_CrearActionPerformed
@@ -1199,6 +1345,48 @@ public class main extends javax.swing.JFrame {
     private void RGBMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RGBMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_RGBMouseClicked
+
+    private void ListadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ListadoActionPerformed
+        for (int i = 0; i < PCs.size(); i++) {
+            if (PCs.get(i) instanceof PC_Escritorio) {
+                PCs.get(i).getDireccionIp();
+            }
+
+        }
+    }//GEN-LAST:event_ListadoActionPerformed
+
+    private void Listado1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Listado1ActionPerformed
+        for (int i = 0; i < PCs.size(); i++) {
+            if (PCs.get(i) instanceof PC_Laptop) {
+                PCs.get(i).getDireccionIp();
+            }
+
+        }
+    }//GEN-LAST:event_Listado1ActionPerformed
+
+    private void CampoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CampoActionPerformed
+
+    private void AceptarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AceptarMouseClicked
+        String pochi = Campo.getText();
+        int num = Integer.parseInt(pochi);
+        PCs.remove(num);
+    }//GEN-LAST:event_AceptarMouseClicked
+
+    private void Campo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Campo1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Campo1ActionPerformed
+
+    private void Aceptar1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Aceptar1MouseClicked
+        String pochi = Campo1.getText();
+        int num = Integer.parseInt(pochi);
+        PCs.remove(num);
+    }//GEN-LAST:event_Aceptar1MouseClicked
+
+    private void Aceptar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Aceptar1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Aceptar1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1236,18 +1424,12 @@ public class main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private java.awt.Button Aceptar;
+    private java.awt.Button Aceptar1;
     private javax.swing.JPanel Base;
-    private javax.swing.JPanel Base1;
-    private javax.swing.JPanel Base10;
-    private javax.swing.JPanel Base11;
     private javax.swing.JPanel Base12;
     private javax.swing.JPanel Base13;
-    private javax.swing.JPanel Base2;
     private javax.swing.JPanel Base3;
-    private javax.swing.JPanel Base4;
-    private javax.swing.JPanel Base5;
-    private javax.swing.JPanel Base6;
-    private javax.swing.JPanel Base7;
     private javax.swing.JPanel Base8;
     private javax.swing.JPanel Base9;
     private java.awt.Button Boton1;
@@ -1257,50 +1439,19 @@ public class main extends javax.swing.JFrame {
     private java.awt.Button Boton5;
     private java.awt.Button Boton6;
     private java.awt.Button BotonAgregarPc;
-    private java.awt.Button BotonAgregarPc1;
-    private java.awt.Button BotonAgregarPc10;
-    private java.awt.Button BotonAgregarPc11;
-    private java.awt.Button BotonAgregarPc12;
-    private java.awt.Button BotonAgregarPc13;
     private java.awt.Button BotonAgregarPc14;
-    private java.awt.Button BotonAgregarPc2;
-    private java.awt.Button BotonAgregarPc3;
-    private java.awt.Button BotonAgregarPc4;
-    private java.awt.Button BotonAgregarPc5;
     private java.awt.Button BotonAgregarPc6;
     private java.awt.Button BotonAgregarPc7;
-    private java.awt.Button BotonAgregarPc8;
-    private java.awt.Button BotonAgregarPc9;
     private java.awt.Button BotonEliminarPc;
-    private java.awt.Button BotonEliminarPc1;
-    private java.awt.Button BotonEliminarPc10;
-    private java.awt.Button BotonEliminarPc11;
-    private java.awt.Button BotonEliminarPc12;
-    private java.awt.Button BotonEliminarPc13;
     private java.awt.Button BotonEliminarPc14;
-    private java.awt.Button BotonEliminarPc2;
-    private java.awt.Button BotonEliminarPc3;
-    private java.awt.Button BotonEliminarPc4;
-    private java.awt.Button BotonEliminarPc5;
     private java.awt.Button BotonEliminarPc6;
     private java.awt.Button BotonEliminarPc7;
-    private java.awt.Button BotonEliminarPc8;
-    private java.awt.Button BotonEliminarPc9;
     private java.awt.Button BotonListarPcs;
-    private java.awt.Button BotonListarPcs1;
-    private java.awt.Button BotonListarPcs10;
-    private java.awt.Button BotonListarPcs11;
-    private java.awt.Button BotonListarPcs12;
-    private java.awt.Button BotonListarPcs13;
     private java.awt.Button BotonListarPcs14;
-    private java.awt.Button BotonListarPcs2;
-    private java.awt.Button BotonListarPcs3;
-    private java.awt.Button BotonListarPcs4;
-    private java.awt.Button BotonListarPcs5;
     private java.awt.Button BotonListarPcs6;
     private java.awt.Button BotonListarPcs7;
-    private java.awt.Button BotonListarPcs8;
-    private java.awt.Button BotonListarPcs9;
+    private java.awt.TextField Campo;
+    private java.awt.TextField Campo1;
     private javax.swing.JTextField CapacidadRam;
     private java.awt.Button Crear;
     private java.awt.Button Crear1;
@@ -1308,8 +1459,11 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JTextField DefPantalla1;
     private javax.swing.JTextField DireccionIP;
     private javax.swing.JTextField DireccionIP1;
+    private javax.swing.JCheckBox HDDoSDD;
     private javax.swing.JTextField HostName;
     private javax.swing.JTextField HostName1;
+    private java.awt.List Listado;
+    private java.awt.List Listado1;
     private javax.swing.JTextField Marca;
     private javax.swing.JTextField Marca1;
     private javax.swing.JTextField MascaraDeRed;
@@ -1317,26 +1471,10 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JFrame Me;
     private javax.swing.JFrame MenuEscritorio;
     private javax.swing.JPanel MenuLaptop;
-    private javax.swing.JPanel MenuLaptop1;
-    private javax.swing.JPanel MenuLaptop2;
-    private javax.swing.JPanel MenuLaptop3;
-    private javax.swing.JPanel MenuLaptop4;
-    private javax.swing.JPanel MenuLaptop5;
     private javax.swing.JPanel MenuLaptop6;
     private java.awt.Label Menui;
-    private java.awt.Label Menui1;
-    private java.awt.Label Menui12;
-    private java.awt.Label Menui13;
-    private java.awt.Label Menui14;
-    private java.awt.Label Menui15;
-    private java.awt.Label Menui16;
-    private java.awt.Label Menui17;
     private java.awt.Label Menui18;
-    private java.awt.Label Menui2;
     private java.awt.Label Menui3;
-    private java.awt.Label Menui4;
-    private java.awt.Label Menui5;
-    private java.awt.Label Menui6;
     private java.awt.Label Menui7;
     private java.awt.Label Menui8;
     private java.awt.Label Menui9;
@@ -1345,7 +1483,6 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JPanel Panel3;
     private javax.swing.JPanel Panel4;
     private javax.swing.JCheckBox RGB;
-    private javax.swing.JCheckBox RGB1;
     private javax.swing.JCheckBox RGB2;
     private java.awt.Label Titulo;
     private java.awt.Label Titulo1;
@@ -1357,79 +1494,40 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JFrame jFrame2;
     private javax.swing.JFrame jFrame3;
     private javax.swing.JFrame jFrame4;
+    private javax.swing.JFrame jFrame5;
+    private javax.swing.JFrame jFrame6;
+    private javax.swing.JFrame jFrame7;
+    private javax.swing.JFrame jFrame8;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
-    private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel14;
-    private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
-    private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
+    private javax.swing.JPanel jPanel21;
+    private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JTextPane jTextPane1;
-    private javax.swing.JTextPane jTextPane2;
-    private javax.swing.JTextPane jTextPane3;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextPane jTextPane4;
     private javax.swing.JTextPane jTextPane5;
     private java.awt.Label label1;
