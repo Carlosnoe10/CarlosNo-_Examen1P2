@@ -1270,6 +1270,25 @@ public class main extends javax.swing.JFrame {
                     x++;
                     switch (menu) {
                         case 1:
+                            ArrayList<Integer> Man = new ArrayList();
+                            ArrayList<Integer> Man1 = new ArrayList();
+                            Man = Ping(PCs.get(0).getDireccionIp());
+                            Man1 = Ping(PCs.get(1).getDireccionIp());
+                            if (Man.get(0).equals(Man1.get(0))) {
+                                System.out.println("Imposible");
+                            } else {
+                                for (int i = 0; i < Man.size(); i++) {
+                                    int man0 = Man1.get(i); 
+                                    String num1= Integer.toString(man0);
+                                    if (num1.length()>8) {
+                                        for (int j = num1.length(); j <8 ; j++) {
+                                        num1= "0"+num1;    
+                                        }
+                                         
+                                    }
+                                    
+                                }
+                            }
                             break;
                         case 2:
                             for (int i = 0; i < PCs.size(); i++) {
@@ -1470,7 +1489,7 @@ public class main extends javax.swing.JFrame {
     }
 
     public static ArrayList Ping(String ip1) {
-        ArrayList<Integer>Onichan= new ArrayList();
+        ArrayList<Integer> Onichan = new ArrayList();
         String[] result = "Esto es una prueba".split(".");
         for (int x = 0; x < result.length; x++) {
             int num = Integer.parseInt(result[x]);
